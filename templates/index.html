@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Index
+{% endblock %}
+
+{% block main %}
+<div>
+    <h2 class="center-text">Tasks</h2>
+        <ul>
+            {% for task in all_tasks %}
+                <li data-task_id="{{ task[0] }}">
+                    {{ task[1] }}
+                    <button onclick="delete_task('{{ task[0] }}')">x</button>
+                </li>
+            {% endfor %}
+        </ul>
+</div>
+<script src="{{ url_for('static', filename='/js/script.js') }}"></script>
+{% endblock %}

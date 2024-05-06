@@ -1,0 +1,25 @@
+body
+{
+    background-image: url('notebook.jpg');
+    background-size: 100% 60%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.center-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Centers text */
+.center-text
+{
+    text-align: center;
+}
+
+li
+{
+    margin-bottom: 10px;
+}
